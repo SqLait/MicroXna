@@ -1,16 +1,10 @@
 #include "../XnaMath/XnaMath.h"
-#include <stdio.h>
+#include "../types/vectors.h"
 
 /*Vectors work a little different. 
  *There is not Vec2 or Vec3. 
  *The dimension of the vector is based on the amount of arguments you give.
  */
-
-typedef struct {
-  float x;
-  float y;
-  float z;
-} Vector;
 
 static float AssignVecAxis(Vector* v, float value, int i) {
   switch (i) {
