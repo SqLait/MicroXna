@@ -1,4 +1,4 @@
-#include "../XnaMath/XnaMath.h"
+#include <math.h>
 #include "../types/vectors.h"
 
 /*Vectors work a little different. 
@@ -30,7 +30,7 @@ float Magnitude(Vector* v) {
   float sZ = v->z * v->z;
 
   const float sV = sX + sY + sZ;
-  const float result = Xna_Sqrt(sV);
+  const float result = sqrt(sV);
 
   return result;
 }
