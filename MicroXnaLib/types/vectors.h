@@ -6,6 +6,9 @@ typedef struct {
   float z;
 } Vector;
 
+typedef Vector Vector2;
+typedef Vector Vector3;
+
 float Magnitude(Vector* v);
 Vector Normalize(Vector* v);
 void VecZero(Vector* v);
